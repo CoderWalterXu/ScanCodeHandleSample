@@ -1,10 +1,10 @@
 
-
+[toc]
 
 # ScanCodeHandleSample
 根据OkHttp使用责任链处理网络请求的方式，配合工厂模式和缓存，对项目中的扫码处理流程进行重构
 
-[toc]
+
 
 # 原始代码
 ```
