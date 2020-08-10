@@ -80,7 +80,7 @@ public class OriginalActivity extends AppCompatActivity {
 
 
     /**
-     * 码信息判空，非空处理码信息，空则终止，并Toast提示，否则继续往下判断情况处理
+     * 码信息判空，空则终止，并Toast提示，否则处理码信息，并继续往下判断情况处理
      * 语音判断，是否语音播报中，是则终止，并Toast提示，否则继续往下判断情况处理
      * 时间判断，同码2s请求一次，是则终止，并Toast提示，否则开始网络请求
      */
