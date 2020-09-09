@@ -24,7 +24,10 @@ public class HandleCaseCacheFactory {
 
         if (mHandleCaseBeanMap.containsKey(type)) {
             LogUtils.e("Map中有  " + type + "，直接返回");
-            return mHandleCaseBeanMap.get(type);
+            HandleCaseBean reuultBean = mHandleCaseBeanMap.get(type);
+            // 替换为最新的code
+            reuultBean.setCode(code);
+            return reuultBean;
         }
 
         LogUtils.e("Map中没有" + type + "，开始创建");
