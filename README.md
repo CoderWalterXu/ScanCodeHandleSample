@@ -283,7 +283,10 @@ public class HandleCaseCacheFactory {
         }
 
         if (mHandleCaseBeanMap.containsKey(type)) {
-            return mHandleCaseBeanMap.get(type);
+            HandleCaseBean reuultBean = mHandleCaseBeanMap.get(type);
+            // 替换为最新的code
+            reuultBean.setCode(code);
+            return reuultBean;
         }
 
         /**
